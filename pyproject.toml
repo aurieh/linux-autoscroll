@@ -1,0 +1,28 @@
+[project]
+name = "xautoscroll"
+authors = [{name = "Tomek", email = "tiamin@o2.pl"}]
+readme = "README.rst"
+dependencies = ["PyQt5 == 5.15.6", "pynput == 1.7.6"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: X11 Applications",
+    "Environment :: X11 Applications :: Qt",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+]
+requires-python = ">=3.7"
+dynamic = ["version", "description"]
+
+[project.urls]
+Code = "https://github.com/TWolczanski/linux-autoscroll"
+
+[project.scripts]
+xautoscroll = "xautoscroll.__main__:main"
+
+[tool.flit.module]
+name = "xautoscroll"
+
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
